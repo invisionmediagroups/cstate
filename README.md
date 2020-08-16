@@ -10,7 +10,7 @@
 ### Official
 
 * [**Example site — cstate.mnts.lt**](https://cstate.mnts.lt)
-* [Source code of the example cStatus site](https://github.com/cstate/example)
+* [Source code of the example cStatus site](https://github.com/invisionmediagroups/cstatus-example)
 
 ## Contents 🔍
 
@@ -64,9 +64,9 @@ You don't have to use Netlify, but this is the best all-around option:
 
 You can simply click this button to get started:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cstate/example)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/invisionmediagroups/cstatus-example)
 
-This sets up cStatus with its default settings from the [the example repository](https://github.com/cstate/example) repo.
+This sets up cStatus with its default settings from the [the example repository](https://github.com/invisionmediagroups/cstatus-example) repo.
 
 If you cloned the example repository and want to use that newly forked repo, click the 'New site from Git' button in the user dashboard.
 
@@ -85,7 +85,7 @@ GitLab Pages, unlike GitHub Pages, supports Hugo, so you can let GitLab build an
 
 [GitLab has a good guide for getting started with GitLab Pages in their documentation.](https://docs.gitlab.com/ee/user/project/pages/#getting-started)
 
-**In short: a `.gitlab-ci.yml` file** is responsible for making cStatus work. As of v4.2.1, the [cStatus automatically ships with this file](https://github.com/cstate/cstate/releases/tag/v4.2.1).
+**In short: a `.gitlab-ci.yml` file** is responsible for making cStatus work. As of v4.2.1, the [cStatus automatically ships with this file](https://github.com/invisionmediagroups/cstatus/releases).
 
 As of this time, this is a relatively untested option, but Hugo does seem to generate the right things (this can be checked by downloading the **CI/CD artificats**).
 
@@ -111,13 +111,13 @@ For this tutorial, it is assumed that you have Hugo and Git installed (check wit
 
 #### I want to use my site in production
 
-[Clone the example repository](https://github.com/cstate/example):
+[Clone the example repository](https://github.com/invisionmediagroups/cstatus-example):
 
 ```bash
-git clone --recursive -b master https://github.com/cstate/example.git
+git clone --recursive -b master https://github.com/invisionmediagroups/cstatus.git
 ```
 
-(We are using `--recursive` because the site will not generate with an empty `themes/cstate` folder.)
+(We are using `--recursive` because the site will not generate with an empty `themes/cstatus` folder.)
 
 Now you can edit what's inside the folder (`example`) and try previewing that with this command:
 
@@ -141,19 +141,19 @@ The downside with manual building is that, if you do not want to use a solution 
 1. Clone this repository in the command line:
 
 ```bash
-git clone --recursive -b master https://github.com/cstate/cstate.git
+git clone --recursive -b master https://github.com/invisionmediagroups/cstatus.git
 ```
 
 2. Navigate to the theme directory:
 
 ```bash
-cd cstate/exampleSite
+cd cstatus/exampleSite
 ```
 
 3. Launch the development setup like this:
 
 ```bash
-hugo serve --baseUrl=http://localhost/ --theme=cstate --themesDir=../.. --verbose
+hugo serve --baseUrl=http://localhost/ --theme=cstatus --themesDir=../.. --verbose
 ```
 
 The main directory is the theme itself (the cStatus guts, basically) and the `exampleSite` folder houses all content. Use this local setup to experiment before making a PR.
@@ -163,11 +163,11 @@ The main directory is the theme itself (the cStatus guts, basically) and the `ex
 
 cStatus comes with a Dockerfile and Netlify ([according to their article from 2016](https://www.netlify.com/blog/2016/10/18/how-our-build-bots-build-sites/)) uses a similar Docker system to build cStatus. This is an option for people who prefer Docker and NGINX instead of serverless, but serverless still has the priority in our development. 
 
-[Read wiki](https://github.com/cstate/cstate/wiki/Docker)
+[Read wiki](https://github.com/invisionmediagroups/cstatus/wiki/Customization)
 
 ## Updating 🎉
 
-**If you are updating from one major version to another, like from v3 to v4, then please [read the migration guides](https://github.com/cstate/cstate/wiki/Usage#migration-guides).**
+**If you are updating from one major version to another, like from v3 to v4, then please [read the migration guides](https://github.com/invisionmediagroups/cstatus/wiki/Customization).**
 
 Assuming the production install instructions were followed, keep cStatus updated by having an up to date Git submodule in the `themes` folder. containing this repository. **Your content should stay separate from the guts of cStatus.**
 
@@ -177,7 +177,7 @@ Ask yourself these questions:
   * If not, go to your desktop or somewhere else, where you can download your Git repository and run: `git clone --recursive <your repo link goes here> && git submodule foreach git pull origin master`.
   * In the parent directory, type `hugo serve`. Check to see if everything is working.
   * Then do `git add -A; git commit -m "Update cStatus"; git push origin master; exit`. Your status page is now updated.
-2. If you **DO** have the directory, go inside `themes/cstate`. If that is empty, it is easier to delete your local copy and do the steps outlined earlier.
+2. If you **DO** have the directory, go inside `themes/cstatus`. If that is empty, it is easier to delete your local copy and do the steps outlined earlier.
 
 There is currently no easier way to do this, unfortunately, you will need the terminal / command line / Git Bash, unless you want to create a new status page from scratch and move your data over manually.
 
@@ -193,7 +193,7 @@ Most of the settings are in the `config.yml` file or under _Settings_, if you ha
 
 #### Using an admin panel (Netlify CMS)
 
-This takes a little more effort to set up but pays off in the long run — [see the wiki](https://github.com/cstate/cstate/wiki) for up to date information.
+This takes a little more effort to set up but pays off in the long run — [see the wiki](https://github.com/invisionmediagroups/cstatus/wiki/Customization) for up to date information.
 
 #### Doing it from the Git repository
 
@@ -250,17 +250,17 @@ For this very basic tutorial, yes.
 
 ### I have more questions!
 
-Check out [the wiki](https://github.com/cstate/cstate/wiki).
+Check out [the wiki](https://github.com/invisionmediagroups/cstatus/wiki/Customization).
 
 ## Contribute 💥
 
 **Making a change in the code**
 
-PRs should be submitted to the `dev` branch, if it exists. Before submitting a pull request, create an issue to [discuss the implications of your proposal](https://github.com/cstate/cstate/issues).
+PRs should be submitted to the `dev` branch, if it exists. Before submitting a pull request, create an issue to [discuss the implications of your proposal](https://github.com/invisionmediagroups/cstatus/issues).
 
 **For translators**
 
-[See this](https://github.com/cstate/cstate/wiki/Translations#add-your-translations).
+[See this](https://github.com/invisionmediagroups/cstatus/wiki/Customization).
 
 **Code of conduct**
 
@@ -268,7 +268,7 @@ PRs should be submitted to the `dev` branch, if it exists. Before submitting a p
 
 ## License ✍
 
-[MIT](https://github.com/cstate/cstate/blob/master/LICENSE.md) © [Mantas Vilčinskas](https://mnts.lt)
+[MIT](https://github.com/invisionmediagroups/cstatus/blob/master/LICENSE.md) © [inVISION MEDIA Groups](https://invisionmediagroups.com)
 
 **Note about versions**
 
