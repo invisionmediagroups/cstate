@@ -19,7 +19,7 @@ collections:
   - name: "issues"
     label: "Incidents"
     label_singular: "Incident"
-    description: "📚 Welcome to the cStatus admin panel! Here you can create new incidents or manage existing ones. Go ahead and give it a shot."
+    description: "Welcome to the cStatus admin panel! Here you can create new incidents or manage existing ones. Go ahead and give it a shot."
     folder: "content/issues"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
