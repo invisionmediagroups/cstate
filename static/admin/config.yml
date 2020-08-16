@@ -81,7 +81,7 @@ collections:
             required: false
             default: true
           - label: 'Site display language'
-            hint: 'Docs: https://github.com/cstate/cstate/wiki/Translations#available-translations'
+            hint: 'Docs: https://github.com/invisionmediagroups/cstatus/wiki/Customization'
             name: 'defaultContentLanguage'
             widget: 'select'
             default: 'en'
@@ -113,9 +113,9 @@ collections:
                 allow_add: true
                 fields:
                 - {label: "Name", name: "name", widget: string}
-                - {label: "Category", hint: "All systems need a category. For more, read the migration docs: https://github.com/cstate/cstate/wiki/Usage#v3-to-v4", name: "category", widget: string}
+                - {label: "Category", hint: "All systems need a category. For more, read the migration docs: https://github.com/invisionmediagroups/cstatus/wiki/Customization", name: "category", widget: string}
                 - {label: "Description", name: "description", widget: string, required: false}
-                - {label: "Partial", hint: "Custom HTML feature: https://github.com/cstate/cstate/wiki/Customization#custom-html", name: "partial", widget: string, required: false}
+                - {label: "Partial", hint: "Custom HTML feature: https://github.com/invisionmediagroups/cstatus/wiki/Customization", name: "partial", widget: string, required: false}
               # Categories
               - label: "Categories"
                 name: "categories"
@@ -148,7 +148,7 @@ collections:
                 default: '15:04 — Jan 2'
               # Design site title color toggle in v4.0.1
               - label: 'Site title text color'
-                hint: 'This is irrelevant, if you use a logo in your header. Docs: https://github.com/cstate/cstate/wiki/Customization#site-title-text-color-v401'
+                hint: 'This is irrelevant, if you use a logo in your header. Docs: https://github.com/invisionmediagroups/cstatus/wiki/Customization'
                 name: 'headerTextColor'
                 widget: 'select'
                 default: 'white'
@@ -159,7 +159,7 @@ collections:
               - label: 'Use large header design'
                 name: 'useLargeHeaderDesign'
                 widget: 'boolean'
-                hint: 'What header design should we use? https://github.com/cstate/cstate/wiki/Customization#changing-header'
+                hint: 'What header design should we use? https://github.com/invisionmediagroups/cstatus/wiki/Customization'
                 required: false
                 default: false
               - label: 'Show logo'
@@ -201,7 +201,7 @@ collections:
               # Incidents view format
               - label: 'Should the incident history be sorted by year or month?'
                 name: 'incidentHistoryFormat'
-                hint: 'Enabling sorting disables pagination. More: https://github.com/cstate/cstate/wiki/Customization#enable-sorting--archives-by-year-or-month-v40'
+                hint: 'Enabling sorting disables pagination. More: https://github.com/invisionmediagroups/cstatus/wiki/Customization'
                 widget: 'select'
                 options:
                   - { label: "Show by year", value: "yearly" }
