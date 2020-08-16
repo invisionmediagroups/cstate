@@ -1,6 +1,6 @@
 <p align="center"><img src="images/cstate-logo-bg.svg?sanitize=true" alt="cStatus example illustration"></p>
 
-<p align="center"><a href="https://github.com/invisionmediagroups/cstatus/releases"><img src="https://img.shields.io/github/release/cstate/cstate/all.svg?style=flat-square" alt="GitHub release" /></a> <a href="https://github.com/invisionmediagroups/cstatus/commits/master"><img src="https://img.shields.io/github/last-commit/cstate/cstate.svg?style=flat-square" alt="GitHub last commit" /></a> <a href="https://github.com/invisionmediagroups/cstatus/tree/master/"><img src="https://img.shields.io/github/repo-size/cstate/cstate.svg?style=flat-square" alt="GitHub repo size in bytes" /></a></p>
+<p align="center"><a href="https://github.com/invisionmediagroups/cstatus/releases"><img src="https://img.shields.io/github/release/cstate/cstate/all.svg?style=flat-square" alt="GitHub release" /></a> <a href="https://github.com/invisionmediagroups/cstatus/commits/master"><img src="https://img.shields.io/github/last-commit/invisionmediagroups/cstatus.svg?style=flat-square" alt="GitHub last commit" /></a> <a href="https://github.com/invisionmediagroups/cstatus/tree/master/"><img src="https://img.shields.io/github/repo-size/cstate/cstate.svg?style=flat-square" alt="GitHub repo size in bytes" /></a></p>
 
 > Über fast, backwards compatible (IE8+), tiny, and simple status page built with Hugo. Completely _free_ with Netlify. Comes with Netlify CMS, read-only API, and other useful features.
 
