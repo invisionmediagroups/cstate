@@ -1,10 +1,10 @@
 WORK_DIR="/app"
-SRC_DIR="/cstate"
+SRC_DIR="/cstatus"
 
 # Check if the working dir is empty, if it is we'll need to copy
-# the files in from src directory (usually /cstate)
+# the files in from src directory (usually /cstatus)
 if ! [ "$(ls -A $WORK_DIR)" ]; then
-    # First run, copy cstate's files in.
+    # First run, copy cstatus's files in.
     echo "First time run! Hello, World :)"
     cp -R $SRC_DIR/* $WORK_DIR
 fi
