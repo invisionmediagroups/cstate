@@ -9,7 +9,7 @@
 
 ### Official
 
-* [**Example site — cstate.mnts.lt**](https://cstate.mnts.lt)
+* [**cStatus Demo Site**](https://cstatus-demo.netlify.app)
 * [Source code of the example cStatus site](https://github.com/invisionmediagroups/cstatus-example)
 
 ## Contents 🔍
