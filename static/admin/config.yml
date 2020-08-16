@@ -1,5 +1,5 @@
 # This is the main configuration file for Netlify CMS.
-# Netlify CMS is used as the admin panel for cState.
+# Netlify CMS is used as the admin panel for cStatus.
 #
 # While some settings here can be kept as is, you may
 # want to change some for a more customized solution.
@@ -7,7 +7,6 @@
 # You can look at what each option does and how to
 # toggle between them on the Netlify CMS repo docs:
 #
-# https://github.com/netlify/netlify-cms/blob/master/docs/quick-start.md
 
 backend:
   name: git-gateway
@@ -20,7 +19,7 @@ collections:
   - name: "issues"
     label: "Incidents"
     label_singular: "Incident"
-    description: "📚 Welcome to the cState admin panel! Here you can create new incidents or manage existing ones. Go ahead and give it a shot."
+    description: "📚 Welcome to the cStatus admin panel! Here you can create new incidents or manage existing ones. Go ahead and give it a shot."
     folder: "content/issues"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -242,7 +241,7 @@ collections:
                 default: '#24478f'
               # Google Analytics
               - label: 'Google Analytics tracking code'
-                hint: 'By default, cState does not use Google Analytics. If you choose to use it, you may change the placeholder code below to your own and thereby enable the tracking service. If you set the value back to UA-00000000-1, the code will once again be removed.'
+                hint: 'By default, cStatus does not use Google Analytics. If you choose to use it, you may change the placeholder code below to your own and thereby enable the tracking service. If you set the value back to UA-00000000-1, the code will once again be removed.'
                 name: 'googleAnalytics'
                 widget: 'string'
                 default: 'UA-00000000-1'
